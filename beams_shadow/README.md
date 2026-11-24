@@ -34,14 +34,15 @@ The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off
 `vet-clean-release` 30d0e3461 plus the tests of 3f2847099:
 
 ```
-PASS idort_beams          11 s  L1 0.777 lum_top 1.79
+PASS idort_beams          10 s  L1 0.777 lum_top 1.79 flux_err 2.66e-07
 PASS idort_beams_mb       38 s  maxdiff_tile_x2 0 maxdiff_block_x1 2.05e-11
 PASS idort_shadow          3 s  L1 0.0138
 PASS idort_shadow_gl       5 s  L1 0.0126
 ```
 
 The beams stay straight and 1-2 cells wide; an oblique beam narrower than a cell carries about
-1.8 times the exact energy density at this resolution (`lum_top`), which dominates L1.
+1.8 times the exact energy density at this resolution (`lum_top`), which dominates L1; the
+energy flux through every face equals the injected flux to 3e-7 (`flux_err`).
 
 The input deck(s) here are copies for reading; the notebook runs the ones in
 `$ATHENAK/tests/vet_clean/decks/`, with the few keys the test changes on top

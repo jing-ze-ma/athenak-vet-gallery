@@ -31,14 +31,16 @@ transport solution (`idort_cylinder_exact.npz`).
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 30d0e3461 plus the tests of 3f2847099:
+`vet-clean-release` 89b05b1c7:
 
 ```
-PASS idort_cylinder       22 s  E_in 0.000518 E_out 0.013 F_out 0.205
+PASS idort_cylinder       22 s  E_in 0.000531 E_out 0.0111 F_out 0.0116 FH_out 0.203
 ```
 
-E follows exact transport to 1.3 % outside the cylinder; the moment flux in the vacuum outside
-is about 20 % above the exact flux (`F_out`, a regression reference).
+E follows exact transport to 1.1 % outside the cylinder and the energy flux Phi (`F_out`) to
+1.2 %. The face momentum F (`FH_out`, not the energy flux) is about 20 % above exact, a
+regression reference. The stored notebook output was made with an older test that scored F as
+the flux; re-running it gives the values above.
 
 The input deck here is a copy for reading; the notebook runs the one in
 `$ATHENAK/tests/vet_clean/decks/` (`run_tests.py` writes the deck it ran as `in.athinput` in
