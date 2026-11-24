@@ -22,7 +22,7 @@ with its plots. The documentation is at
 - **[Narrow wedges](wedge_sym)**: phi mirror symmetry on 3.7, 7.3 and 20 deg wedges.
 - **[Well-balancing](well_balance)**: an envelope in hydrostatic and radiative equilibrium stays
   at rest.
-- **[Order of accuracy](order)**: second order in time and space.
+- **[Order of accuracy](order)**: the measured orders in time and space.
 - **[Thermal equilibrium](thermal_eq)**: gas-radiation exchange against the exact ODE.
 - **[Non-LTE atmosphere](nlte)**: the ray closure against the exact transport solution.
 - **[Radiative shocks](radshock)**: Lowrie & Edwards Mach 2 and 5 shocks against the
