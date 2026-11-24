@@ -25,7 +25,13 @@ with its plots. The documentation is at
 - **[Order of accuracy](order)**: second order in time and space.
 - **[Thermal equilibrium](thermal_eq)**: gas-radiation exchange against the exact ODE.
 - **[Non-LTE atmosphere](nlte)**: the ray closure against the exact transport solution.
+- **[Radiative shocks](radshock)**: Lowrie & Edwards Mach 2 and 5 shocks against the
+  semi-analytic profiles.
 - **[Linear momentum](momentum_box)**: the momentum drift in a periodic box (a report).
+- **[Crossing beams and shadow](beams_shadow)**: beams crossing in vacuum and the shadow of an
+  opaque cloud against the exact beam fields (Jiang 2021; Ma et al. 2025).
+- **[Emitting cylinder](cylinder)**: E and F inside and outside an optically thick emitting
+  cylinder against the exact transport solution.
 - **[Floors](floor_pay)**: floors with a general EOS, paid from the radiation.
 
 ## Setup (once)
