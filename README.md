@@ -12,7 +12,7 @@ with its plots. The documentation is at
 - **[3-D star, spherical polar](star3d-sp)**: a blue-supergiant envelope on a 60 deg wedge with
   the production keys; a few cycles on one CPU node, then 15 min on 4 GPUs; luminosity, slices
   and profiles.
-- **[3-D star, cubed sphere](star3d-cs)**: a 25 Msun red supergiant on the full sphere; the same
+- **[3-D star, cubed sphere](star3d-cs)**: a 20.5 Msun red supergiant on the full sphere; the same
   steps.
 - **[Conservation](conservation)**: energy, mass and L_z on a closed rotating shell (spherical
   polar and cubed sphere).

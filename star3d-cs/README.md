@@ -1,6 +1,6 @@
 # 3-D star test (cs): a red supergiant on a cubed sphere
 
-A small, complete 3-D star deck with the production scheme keys: cubed sphere, full sphere: r 25-2530 Rsun (stretched; photosphere at 834 Rsun), 6 faces x 32 x 32; a 25 Msun RSG (MESA profile), the RSG production deck at 1/4 of its lateral resolution.
+A small, complete 3-D star deck with the production scheme keys: cubed sphere, full sphere: r 25-2530 Rsun (stretched; photosphere at 834 Rsun), 6 faces x 32 x 32; a 20.5 Msun RSG (MESA profile), the RSG production deck at 1/4 of its lateral resolution.
 548 x 32 x 32 x 6 = 3.4 M cells, 24 MeshBlocks of 548 x 16 x 16; 1200 cycles, 13.9 d. It runs in about 15 minutes on 4 A100 GPUs; a few cycles on one CPU node show that the setup works.
 Use it to check a new build or machine before a production run, and as a starting point for your own star decks.
 Full text: the docs page [3-D stars](https://jing-ze-ma.github.io/athenak-vet-docs/stars.html).
