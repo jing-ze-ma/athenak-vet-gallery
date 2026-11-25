@@ -28,11 +28,11 @@
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS restart_sp           15 s  files 4 maxdiff 0
-PASS restart_cs           11 s  files 4 maxdiff 0
+PASS restart_sp            8 s  files 4 maxdiff 0
+PASS restart_cs            9 s  files 4 maxdiff 0
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

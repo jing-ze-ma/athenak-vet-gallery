@@ -31,10 +31,10 @@ transport solution (`idort_cylinder_exact.npz`).
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 89b05b1c7:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS idort_cylinder       22 s  E_in 0.000531 E_out 0.0111 F_out 0.0116 FH_out 0.203
+PASS idort_cylinder       31 s  E_in 0.000533 E_out 0.0115 F_out 0.0114 FH_out 0.204
 ```
 
 E follows exact transport to 1.1 % outside the cylinder and the energy flux Phi (`F_out`) to

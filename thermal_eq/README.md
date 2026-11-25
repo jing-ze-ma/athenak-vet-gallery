@@ -28,10 +28,10 @@ Uniform gas and radiation out of equilibrium relax to a common temperature at co
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS thermal_eq           30 s  errT_h 0.000552 dEtot_h 1.26e-15 errT_h2 0.000124 dEtot_h2 1.26e-15 order 2.16
+PASS thermal_eq           25 s  errT_h 0.000552 dEtot_h 1.12e-15 errT_h2 0.000124 dEtot_h2 7e-16 order 2.16
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

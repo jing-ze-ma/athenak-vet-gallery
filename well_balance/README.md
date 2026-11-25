@@ -28,11 +28,11 @@ A grey scattering envelope in hydrostatic and radiative equilibrium (2-D spheric
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS wb_sp                10 s  vmax_over_cs 4.57e-09
-PASS wb_cs                83 s  vmax_over_cs 1.18e-09
+PASS wb_sp                19 s  vmax_over_cs 6.08e-09 vmax_over_cs_rot 6.1e-09
+PASS wb_cs               267 s  vmax_over_cs 5.11e-10 vmax_over_cs_rot 7.4e-09
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

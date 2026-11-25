@@ -28,11 +28,11 @@ A scattering atmosphere with thermalisation parameter epsilon = 0.1 and 1e-4 (Ji
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS nlte_eps1e-1         22 s  L1 9.58e-05
-PASS nlte_eps1e-4         25 s  L1 0.00133
+PASS nlte_eps1e-1         17 s  L1 9.58e-05
+PASS nlte_eps1e-4         17 s  L1 0.00133
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

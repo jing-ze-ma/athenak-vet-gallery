@@ -7,7 +7,7 @@ exact straight and attenuated beams.
 
 | | |
 |---|---|
-| property shown | closure accuracy (VET from rays): beams cross without interacting, sharp shadows |
+| property shown | closure accuracy (VET from rays): beams cross and go on, sharp shadows |
 | suite criterion | L1 of E (and the beam energy `lum_top`) within 5 % of the reference values; 4 MeshBlocks identical to 1 in tile mode |
 | files | `beams_shadow.ipynb`, `idort_beams.athinput`, `idort_shadow.athinput`, `idort_shadow_gl.athinput` |
 | time | about 60 s with 4 OpenMP threads per run (one CPU node) |
@@ -31,18 +31,21 @@ exact straight and attenuated beams.
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 30d0e3461 plus the tests of 3f2847099:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS idort_beams          10 s  L1 0.777 lum_top 1.79 flux_err 2.66e-07
-PASS idort_beams_mb       38 s  maxdiff_tile_x2 0 maxdiff_block_x1 2.05e-11
-PASS idort_shadow          3 s  L1 0.0138
-PASS idort_shadow_gl       5 s  L1 0.0126
+PASS idort_beams          11 s  L1 0.177 lum_top 1.19 flux_err 5.97e-08
+PASS idort_beams_mb       45 s  maxdiff_tile_x2 0 maxdiff_block_x1 1.3e-11
+PASS idort_shadow          2 s  L1 0.0138
+PASS idort_shadow_gl       4 s  L1 0.0126
 ```
 
-The beams stay straight and 1-2 cells wide; an oblique beam narrower than a cell carries about
-1.8 times the exact energy density at this resolution (`lum_top`), which dominates L1; the
-energy flux through every face equals the injected flux to 3e-7 (`flux_err`).
+The beams, 4 cells wide, stay straight, at their angle, and 0.8 cells wider at half maximum than
+the exact ones; they carry 1.19 times the exact energy (`lum_top`), which dominates L1, and the
+excess falls as the beam widens (1.76, 1.38, 1.19, 1.09 at 1, 2, 4, 8 cells). They cross and go
+on: the field differs from the sum of the two single-beam fields by more than 0.05 of a beam's
+energy density only in 40 of 256 rows, around the crossings. The energy flux through every row
+equals the injected flux to 6e-8 (`flux_err`).
 
 The input deck(s) here are copies for reading; the notebook runs the ones in
 `$ATHENAK/tests/vet_clean/decks/`, with the few keys the test changes on top

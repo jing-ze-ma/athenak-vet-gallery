@@ -28,11 +28,11 @@
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS order_time           30 s  err_E [0.00102 0.000344 0.000113 3.15e-05] order_E [1.57 1.61 1.84] err_F [0.00477 0.00169 0.000589 0.000168] order_F [1.5 1.52 1.81] err_T [0.000167 6.61e-05 2.45e-05 6.9e-06] order_T [1.34 1.43 1.83]
-PASS order_space         188 s  err_E [0.071 0.0205 0.00449] order_E [1.79 2.19] err_v [0.12 0.0424 0.0111] order_v [1.5 1.94]
+PASS order_time           27 s  err_E [0.00102 0.000344 0.000113 3.15e-05] order_E [1.57 1.61 1.84] err_F [0.00475 0.00168 0.000588 0.000168] order_F [1.5 1.52 1.81] err_T [0.000167 6.61e-05 2.46e-05 6.91e-06] order_T [1.34 1.43 1.83]
+PASS order_space         236 s  err_E [0.0907 0.0208 0.00434] order_E [2.12 2.26] err_v [0.106 0.0379 0.00979] order_v [1.48 1.95]
 ```
 
 Deck D is pre-asymptotic at these time steps (successive orders 1.57, 1.61, 1.84 for E); the criterion is on the finest pair.

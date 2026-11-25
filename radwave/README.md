@@ -1,6 +1,6 @@
 # Radiation-acoustic waves in every trapping regime
 
-A small (1e-6) sound wave in a uniform periodic gas + radiation box (64 x 4 cells, two periods, cfl 0.3), started on the exact eigenmode, at grid-scale trapping parameters x = 0.01, 0.1, 1 and 100. The phase speed and damping of the k = 1 mode are fitted and compared with the analytic root of the linear gas + moment system.
+A small (1e-3) sound wave in a uniform periodic gas + radiation box (80 x 4 cells, two periods, cfl 0.3), started on the exact eigenmode, at grid-scale trapping parameters x = 0.01, 0.1, 1 and 100. The phase speed and damping of the k = 1 mode are fitted and compared with the analytic root of the linear gas + moment system.
 
 | | |
 |---|---|
@@ -28,10 +28,10 @@ A small (1e-6) sound wave in a uniform periodic gas + radiation box (64 x 4 cell
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS radwave              57 s  err_cph [0.000389 0.00188 0.00137 0.000368] err_damp [0.00187 7.1e-05 0.000173 0.000679] damp [0.715 0.164 0.0152 0.000773] warnings 0 dt_gain 2.77
+PASS radwave              62 s  err_cph [0.00149 0.00147 0.000928 0.000239 0.00226 0.000931] err_damp [0.000864 0.000225 1.63e-05 7.97e-05 0.000655 1.63e-05] damp [0.712 0.164 0.0151 0.000174 0.164 0.0151] warnings 0 dt_gain 2.73 dt_gain_phase [2.16 1.06]
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

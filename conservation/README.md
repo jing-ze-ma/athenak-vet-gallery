@@ -28,11 +28,11 @@ A rotating gas + radiation shell in a closed box (reflecting walls), 3-D spheric
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS conservation_sp      12 s  dE 6.67e-16 dM 7.19e-16 dLz 0 dLz_gr 6.94e-07
-PASS conservation_cs       5 s  dE 8.4e-16 dM 3.91e-16 dLz 1.17e-16 dLz_gr 6.44e-05
+PASS conservation_sp       5 s  dE 1e-15 dM 6.74e-16 dLz 1.47e-16 dLz_gr 5.92e-07
+PASS conservation_cs       6 s  dE 1.32e-15 dM 2.61e-16 dLz 1.17e-16 dLz_gr 6.48e-05
 ```
 
 `dLz` is the drift of `Lz_tot` (gas + radiation + the L_z ledger); `dLz_gr` is the drift of gas + radiation alone (on spherical polar the face-flux cone cut of the first cycles; on the cubed sphere a diagnostic mismatch, not the scheme's L_z). See the docs page Properties.

@@ -39,11 +39,11 @@ closure in the optically thin precursor. With `clean_closure = eddington` (the s
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 30d0e3461:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS radshock             15 s  L1_rho 0.00441 L1_v 0.00361 L1_Tg 0.00656 L1_Tr 0.0107 Emin 1.72e+11 warnings 0
-PASS radshock_m5          16 s  L1_rho 0.00454 L1_v 0.00224 L1_Tg 0.00625 L1_Tr 0.00746 Emin 1.79e+11 warnings 0
+PASS radshock             18 s  L1_rho 0.00438 L1_v 0.00358 L1_Tg 0.00659 L1_Tr 0.0107 Emin 1.72e+11 warnings 0
+PASS radshock_m5          15 s  L1_rho 0.00386 L1_v 0.00212 L1_Tg 0.0062 L1_Tr 0.00744 Emin 1.79e+11 warnings 0
 ```
 
 The input decks and reference profiles here are copies for reading. The notebook runs the

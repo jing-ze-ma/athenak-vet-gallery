@@ -28,10 +28,10 @@ A periodic 3-D Cartesian box (8^3) with a radiation wave along the xyz diagonal,
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS momentum_box          7 s  dP_max 5.87e-17 dP_cyc [5.73e-17 5.87e-17 5.75e-17 5.87e-17 5.43e-17 5.47e-17 5.28e-17 5.49e-17] warnings 0
+PASS momentum_box          7 s  dP_max 8.89e-17 dP_cyc [8.4e-17 8.25e-17 8.16e-17 8.28e-17 8.6e-17 8.16e-17 8.25e-17 8.89e-17] warnings 0
 ```
 
 At this amplitude none of the terms that change linear momentum acts, so the drift is round-off; the scheme does not conserve linear momentum in general (docs page Properties).

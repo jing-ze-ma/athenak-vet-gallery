@@ -28,10 +28,10 @@ The shell at rest and spherically symmetric, with the production Gauss-Legendre 
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS wedge_sym            22 s  fphi [1.58e-09 1.95e-11 1.87e-12] warnings 0 wedge_fatal 1
+PASS wedge_sym            22 s  fphi [7.01e-10 2.11e-11 2.81e-09] warnings 0 wedge_fatal 1 fth 2.29e-15 theta_fatal 1 fth_rot 3.68e-10 rot_fatal 1
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

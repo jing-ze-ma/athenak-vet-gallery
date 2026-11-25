@@ -9,7 +9,7 @@ basename = eq1
 
 <mesh>
 layout_invariant = true
-nghost = 2
+nghost = 3
 nx1 = 32
 x1min = 0.0
 x1max = 1.0
@@ -25,6 +25,8 @@ x3min = -0.5
 x3max = 0.5
 ix3_bc = periodic
 ox3_bc = periodic
+layout_invariant_mode = tile
+layout_tile = 16
 
 <meshblock>
 nx1 = 32
@@ -34,7 +36,7 @@ nx3 = 1
 <time>
 evolution = dynamic
 integrator = rk2
-cfl_number = 0.4
+cfl_number = 0.3
 nlim = -1
 tlim = 2.0e-5
 ndiag = 1
@@ -45,6 +47,12 @@ eos = ideal
 reconstruct = plm
 rsolver = hllc
 gamma = 1.666666666666667
+fofc = true
+dfloor_flux_limit = true
+dfloor_keep_velocity = true
+rad_signal_speed = true
+rad_signal_speed_diff = true
+rad_signal_speed_phase = true
 
 <rad_vet>
 # --- production scheme keys ---
@@ -65,7 +73,6 @@ time2_gtime_mom = true
 time2_k1_stiff = 0
 clean_pred_stage = false
 clean_stag_central = true
-clean_stag_kpat = false
 clean_stag_eicarry = true
 clean_gas_secant = max_stage2
 clean_pred_xch = true
@@ -78,7 +85,6 @@ clean_stag_csvec_radial = true
 closure = vet_sc
 time2_vet_col_source = blend
 time_scheme = hesdirk2
-time2_start = be
 vet_rotate_avg = 0
 vet_col_lat_cut_thin = 1.0
 vet_gd_rotate_t0 = 0.0
@@ -87,8 +93,6 @@ vet_source_noesrc = true
 vet_scatter = true
 vet_scatter_form = ma
 vet_scatter_j = relaxed
-implicit_pos_floor_solve = true
-vet_col_lat_taucut = 30.0
 vet_gd_gl_nmu = 10
 vet_gd_gl_nphi = 12
 vet_gd_gl_stagger = true
@@ -136,6 +140,10 @@ vet_nphi = 32
 implicit_cfl = 0.016
 vet_x1_periodic = true
 vet_x1_npass = 2
+clean_clos1_budget = true
+clean_bud_maxnorm = true
+clean_maxit = 200
+clean_wb_exch_local = true
 
 <problem>
 pgen_name = rad_vet_beam

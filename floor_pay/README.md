@@ -28,10 +28,10 @@ The closed shell with `hydro/eos = general` and a temperature floor just above t
 ## Result
 
 The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off`) of release
-`vet-clean-release` 38f3d3c95:
+`vet-clean-release` ccab558ee:
 
 ```
-PASS floor_pay            13 s  dE 7.78e-16 dE0 1.9e-06 paid 0.286 unpaid 0 warnings 0
+PASS floor_pay            27 s  dE 8.34e-16 dE0 5e-16 paid 0.153 unpaid 0 warnings 0 worst_lines 185 worst_bitwise True ekin_floor_dE 1e-15 ekin_floor_dM 6.74e-16 ekin_cart_dM 2.22e-16 ekin_dE 8.34e-16 ekin_dM 5.4e-16 ekin_dLz 1.47e-16
 ```
 
 `dE0` is the payment of the initial conversion at the top of cycle 1, after the t = 0 output.
