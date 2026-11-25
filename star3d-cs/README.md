@@ -69,6 +69,6 @@ Checks:
 
 | deck | L_in | L_top at the end | L_top / L_in at the end | L_top / L_in over the second half |
 |---|---|---|---|---|
-| cs | 6.837e38 | 6.74e38 | 0.986 | 0.986 - 0.997 |
+| cs (at 13.9 d; falling: the mixing-length scaffold is ramped down over 105 d, see the docs page) | 6.837e38 | 6.74e38 | 0.986 | 0.986 - 0.997 |
 
 The committed `star3d.ipynb` was executed on the 4-MI300A runs of both decks.

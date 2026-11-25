@@ -69,6 +69,6 @@ Checks:
 
 | deck | L_in | L_top at the end | L_top / L_in at the end | L_top / L_in over the second half |
 |---|---|---|---|---|
-| sp (over 4.9-9.8 d) | 4.651e37 (wedge) | 4.81e37 | 1.035 | 0.958 - 1.066 |
+| sp (over 4.9-9.8 d; after about 8 d the envelope starts convecting, see the docs page) | 4.651e37 (wedge) | 4.81e37 | 1.035 | 0.958 - 1.066 |
 
 The committed `star3d.ipynb` was executed on the 4-MI300A runs of both decks.
