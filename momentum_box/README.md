@@ -17,7 +17,7 @@ A periodic 3-D Cartesian box (8^3) with a radiation wave along the xyz diagonal,
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/momentum_box
+   cd athenak-vet-notebooks/momentum_box
    jupyter nbconvert --to notebook --execute --inplace momentum_box.ipynb
    ```
 

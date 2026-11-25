@@ -27,7 +27,7 @@ closure in the optically thin precursor. With `clean_closure = eddington` (the s
    `$ATHENAK/tests/vet_clean`, writes the runs to `runs/` and plots them:
 
    ```bash
-   cd athenak-vet-gallery/radshock
+   cd athenak-vet-notebooks/radshock
    jupyter nbconvert --to notebook --execute --inplace radshock.ipynb
    ```
 

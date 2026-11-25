@@ -17,7 +17,7 @@ A small (1e-3) sound wave in a uniform periodic gas + radiation box (80 x 4 cell
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/radwave
+   cd athenak-vet-notebooks/radwave
    jupyter nbconvert --to notebook --execute --inplace radwave.ipynb
    ```
 

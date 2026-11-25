@@ -17,7 +17,7 @@ The closed shell with `hydro/eos = general` and a temperature floor just above t
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/floor_pay
+   cd athenak-vet-notebooks/floor_pay
    jupyter nbconvert --to notebook --execute --inplace floor_pay.ipynb
    ```
 

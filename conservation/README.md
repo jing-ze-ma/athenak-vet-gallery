@@ -17,7 +17,7 @@ A rotating gas + radiation shell in a closed box (reflecting walls), 3-D spheric
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/conservation
+   cd athenak-vet-notebooks/conservation
    jupyter nbconvert --to notebook --execute --inplace shell.ipynb
    ```
 

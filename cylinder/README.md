@@ -20,7 +20,7 @@ transport solution (`idort_cylinder_exact.npz`).
    writes the run to `runs/` and plots it):
 
    ```bash
-   cd athenak-vet-gallery/cylinder
+   cd athenak-vet-notebooks/cylinder
    jupyter nbconvert --to notebook --execute --inplace cylinder.ipynb
    ```
 

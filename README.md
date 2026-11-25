@@ -60,7 +60,7 @@ cd ..
 Get this gallery next to it and name the two in the environment:
 
 ```bash
-git clone https://github.com/jing-ze-ma/athenak-vet-gallery.git
+git clone https://github.com/jing-ze-ma/athenak-vet-notebooks.git
 export ATHENAK=$PWD/athenak
 export ATHENA_EXE=$ATHENAK/build_tests/src/athena
 ```

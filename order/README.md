@@ -17,7 +17,7 @@
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/order
+   cd athenak-vet-notebooks/order
    jupyter nbconvert --to notebook --execute --inplace order.ipynb
    ```
 

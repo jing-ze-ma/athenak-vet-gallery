@@ -20,7 +20,7 @@ exact straight and attenuated beams.
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/beams_shadow
+   cd athenak-vet-notebooks/beams_shadow
    jupyter nbconvert --to notebook --execute --inplace beams_shadow.ipynb
    ```
 

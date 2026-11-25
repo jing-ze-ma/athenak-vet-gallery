@@ -17,7 +17,7 @@ A grey scattering envelope in hydrostatic and radiative equilibrium (2-D spheric
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/well_balance
+   cd athenak-vet-notebooks/well_balance
    jupyter nbconvert --to notebook --execute --inplace wb.ipynb
    ```
 

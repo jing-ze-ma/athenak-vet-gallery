@@ -17,7 +17,7 @@ A scattering atmosphere with thermalisation parameter epsilon = 0.1 and 1e-4 (Ji
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/nlte
+   cd athenak-vet-notebooks/nlte
    jupyter nbconvert --to notebook --execute --inplace nlte.ipynb
    ```
 

@@ -17,7 +17,7 @@ Uniform gas and radiation out of equilibrium relax to a common temperature at co
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/thermal_eq
+   cd athenak-vet-notebooks/thermal_eq
    jupyter nbconvert --to notebook --execute --inplace thermal_eq.ipynb
    ```
 

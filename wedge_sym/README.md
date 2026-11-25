@@ -17,7 +17,7 @@ The shell at rest and spherically symmetric, with the production Gauss-Legendre 
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/wedge_sym
+   cd athenak-vet-notebooks/wedge_sym
    jupyter nbconvert --to notebook --execute --inplace wedge_sym.ipynb
    ```
 

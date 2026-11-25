@@ -17,7 +17,7 @@
    writes the runs to `runs/` and plots them):
 
    ```bash
-   cd athenak-vet-gallery/restart
+   cd athenak-vet-notebooks/restart
    jupyter nbconvert --to notebook --execute --inplace restart.ipynb
    ```
 
