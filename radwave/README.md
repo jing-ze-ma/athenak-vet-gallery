@@ -31,7 +31,7 @@ The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off
 `vet-clean-release` ccab558ee:
 
 ```
-PASS radwave              62 s  err_cph [0.00149 0.00147 0.000928 0.000239 0.00226 0.000931] err_damp [0.000864 0.000225 1.63e-05 7.97e-05 0.000655 1.63e-05] damp [0.712 0.164 0.0151 0.000174 0.164 0.0151] warnings 0 dt_gain 2.73 dt_gain_phase [2.16 1.06]
+PASS radwave              61 s  err_cph [0.00149 0.00147 0.000928 0.000239 0.00226 0.000931] err_damp [0.000865 0.000225 1.63e-05 8e-05 0.000655 1.63e-05] damp [0.712 0.164 0.0151 0.000174 0.164 0.0151] warnings 0 dt_gain 2.73 dt_gain_phase [2.16 1.06]
 ```
 
 The input deck(s) here are copies for reading; the notebook runs the ones in

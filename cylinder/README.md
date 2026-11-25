@@ -8,7 +8,7 @@ transport solution (`idort_cylinder_exact.npz`).
 | | |
 |---|---|
 | property shown | closure accuracy (VET from rays) around an emitting body |
-| suite criterion | L1 of E inside and outside and of F outside within 5 % of the reference values |
+| suite criterion | L1 of E inside and outside and of the energy flux and the face momentum outside within 5 % of the reference values |
 | files | `cylinder.ipynb`, `idort_cylinder.athinput`, `idort_cylinder_exact.npz` |
 | time | about 25 s with 4 OpenMP threads (one CPU node) |
 
@@ -39,8 +39,7 @@ PASS idort_cylinder       31 s  E_in 0.000533 E_out 0.0115 F_out 0.0114 FH_out 0
 
 E follows exact transport to 1.1 % outside the cylinder and the energy flux Phi (`F_out`) to
 1.2 %. The face momentum F (`FH_out`, not the energy flux) is about 20 % above exact, a
-regression reference. The stored notebook output was made with an older test that scored F as
-the flux; re-running it gives the values above.
+regression reference.
 
 The input deck here is a copy for reading; the notebook runs the one in
 `$ATHENAK/tests/vet_clean/decks/` (`run_tests.py` writes the deck it ran as `in.athinput` in

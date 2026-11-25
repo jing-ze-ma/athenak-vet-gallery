@@ -67,5 +67,5 @@ export ATHENA_EXE=$ATHENAK/build_tests/src/athena
 
 Then follow the README of a folder. The notebooks read `ATHENAK` (default `../../athenak`,
 a checkout next to the gallery) and `ATHENA_EXE` (default `$ATHENAK/build_tests/src/athena`);
-`M1_NB_THREADS` sets the OpenMP threads per run (default 4). The two star tests need GPU
+`VET_NB_THREADS` sets the OpenMP threads per run (default 4). The two star tests need GPU
 builds instead; their READMEs say how.

@@ -1,6 +1,6 @@
 # Order of accuracy in time and space
 
-`order_time`: a spherical shell with kinematic gas and Marshak walls; the time step is halved on a fixed grid. `order_space`: a linear radiation-hydro wave, one period, N = 16 ... 128 cells. The notebook plots the L1 error against dt and N, with a slope-2 line.
+`order_time`: a spherical shell with kinematic gas and Marshak walls; the time step is halved on a fixed grid. `order_space`: a linear radiation-hydro wave, one period, N = 16 ... 128 cells. `order_stiff`: a trapped radiation-acoustic wave, the time step halved. The notebook plots the L1 error against dt, N and the steps per period, with a slope-2 line.
 
 | | |
 |---|---|
@@ -32,6 +32,7 @@ The committed notebook was executed with a CPU build (GCC 13, `-ffp-contract=off
 
 ```
 PASS order_time           27 s  err_E [0.00102 0.000344 0.000113 3.15e-05] order_E [1.57 1.61 1.84] err_F [0.00475 0.00168 0.000588 0.000168] order_F [1.5 1.52 1.81] err_T [0.000167 6.61e-05 2.46e-05 6.91e-06] order_T [1.34 1.43 1.83]
+PASS order_stiff          11 s  err_E [4.31e-06 1.13e-06 2.9e-07] order_E [1.94 1.96] err_v [0.00449 0.00118 0.000305] order_v [1.92 1.96]
 PASS order_space         236 s  err_E [0.0907 0.0208 0.00434] order_E [2.12 2.26] err_v [0.106 0.0379 0.00979] order_v [1.48 1.95]
 ```
 
